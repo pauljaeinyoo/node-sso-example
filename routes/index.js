@@ -4,10 +4,10 @@ var express = require('express');
 var router = express.Router();
 const WorkOS = require('@workos-inc/node').default;
 
-const client = new WorkOS(process.env.WORKOS_API_KEY);
-const domain = "$YOUR_DOMAIN";
-const redirectURI = "$YOUR_REDIRECT_URI";
-const projectID = "$YOUR_PROJECT_ID";
+const client = new WorkOS("sk_test_a2V5XzAxRjlZWEtBODFNS1RHSzQ2RDVKQ1FTVlNFLE5oRmhRYmdSbUNvZ1F1WWNTSUdlRWNRVTQ");
+const domain = "foo-corp.com";
+const redirectURI = "https://foo-corp.okta.com/app/foo-corp_segmentstagingworkostestapp_1/exk3q0mmjjJsoX3ym4x7/sso/saml";
+const projectID = "client_01F9YXKA8F2TW2CRRWG9BTHG4Q";
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
